@@ -1,0 +1,19 @@
+@import "./variables";
+
+@mixin button {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 0 3px 1px $boxShadowColor;
+  background: $mainColor;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 4px 2px $boxShadowColor;
+  }
+}
