@@ -21,30 +21,38 @@ function VariableDescription({
           Назад
         </Link>
       </nav>
-      <ul className="container_description">
-        <li className="container_description-item">
-          <p className="container_description-title">Имя</p>
-          <div className="container_description-text">{variable.Name}</div>
-        </li>
-        <li className="container_description-item">
-          <p className="container_description-title">Группа</p>
-          <div className="container_description-text">{variable.GroupName}</div>
-        </li>
-        <li className="container_description-item">
-          <p className="container_description-title">Тип</p>
-          <div className="container_description-text">{variable.DataType}</div>
-        </li>
-        <li className="container_description-item">
-          <p className="container_description-title">ID</p>
-          <div className="container_description-text">{variable.ID}</div>
-        </li>
-        <li className="container_description-item">
-          <p className="container_description-title">Описание</p>
-          <div className="container_description-text">
-            {variable.Description}
-          </div>
-        </li>
-      </ul>
+      {variable ? (
+        <ul className="container_description">
+          <li className="container_description-item">
+            <p className="container_description-title">Имя</p>
+            <div className="container_description-text">{variable.Name}</div>
+          </li>
+          <li className="container_description-item">
+            <p className="container_description-title">Группа</p>
+            <div className="container_description-text">
+              {variable.GroupName}
+            </div>
+          </li>
+          <li className="container_description-item">
+            <p className="container_description-title">Тип</p>
+            <div className="container_description-text">
+              {variable.DataType}
+            </div>
+          </li>
+          <li className="container_description-item">
+            <p className="container_description-title">ID</p>
+            <div className="container_description-text">{variable.ID}</div>
+          </li>
+          <li className="container_description-item">
+            <p className="container_description-title">Описание</p>
+            <div className="container_description-text">
+              {variable.Description}
+            </div>
+          </li>
+        </ul>
+      ) : (
+        <p>Упс..., что-то пошло не так, попробуйте позже.</p>
+      )}
     </div>
   );
 }

@@ -13,12 +13,12 @@ function Main() {
     <div className="container">
       <Form />
       <ButtonDetail />
-      {responseMessage && (
+      
         <div className="container_info">
           <HistoryRequests />
-          <ResponseMessage />
+        {responseMessage && <ResponseMessage />}
         </div>
-      )}
+    
       {responseValue.length > 0 && <ResponseData />}
     </div>
   );

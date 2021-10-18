@@ -21,39 +21,21 @@
   &_history,
   &_message,
   &_description,
-  &_variables {
+  &_variables,
+  .skeleton-description {
     padding: 15px 30px;
     box-shadow: 0 0 3px 1px $boxShadowColor;
-  }
-  &_variables {
-    display: flex;
-    flex-wrap: wrap;
-    &-item {
-      display: block;
-      width: calc(100% / 3);
-      padding: 5px 10px;
-      margin-bottom: 10px;
-      text-align: center;
-      color: black;
-      text-decoration: none;
-      transition: 0.2s ease-in-out;
-      border: 1px solid transparent;
-      &:hover {
-        background-color: $mainColor;
-        border: 1px solid rgb(117, 115, 115);
-      }
-    }
   }
   &_info {
     margin-bottom: 20px;
     display: flex;
   }
   &_history {
-    flex-basis: 820px;
+    width: 35%;
     margin-right: 20px;
   }
   &_message {
-    flex-basis: auto;
+    width: 65%;
   }
   &_description {
     list-style: none;
@@ -69,6 +51,27 @@
     &-text {
       text-align: right;
       color: rgb(143, 141, 141);
+    }
+  }
+  &_variables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &-item {
+      display: block;
+      width: 300px;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.2s ease-in-out;
+      border: 1px solid transparent;
+      &:hover {
+        background-color: $mainColor;
+        border: 1px solid rgb(117, 115, 115);
+        box-shadow: 0 0 3px 1px $boxShadowColor;
+      }
     }
   }
 }
@@ -152,10 +155,19 @@
       }
       &:last-child {
         text-align: right;
-
         color: rgb(143, 141, 141);
       }
     }
+  }
+}
+.skeleton-variable {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .MuiSkeleton-rectangular {
+    width: 300px;
+    margin-bottom: 20px;
   }
 }
 
@@ -178,7 +190,6 @@
     &_variables {
       padding: 10px;
       &-item {
-        width: calc(100% / 2);
         padding: 5px;
       }
     }
@@ -187,6 +198,7 @@
     }
     &_history,
     &_message {
+      width: 100%;
       padding: 10px;
     }
     &_history {
@@ -213,6 +225,13 @@
     padding: 10px;
     &_title {
       font-size: 18px;
+    }
+  }
+
+  .skeleton-variable {
+    justify-content: center;
+    .MuiSkeleton-rectangular {
+      width: 280px;
     }
   }
 }

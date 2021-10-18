@@ -51,6 +51,7 @@ function States() {
   const formRef = useRef();
 
   function hendlerForm(e) {
+    setResponseMessage("");
     const [text] = formRef.current;
     let vin = "";
     typeof e === "string" ? (vin = e) : (vin = text.value);

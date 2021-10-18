@@ -1,11 +1,12 @@
 import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Context from "../Context";
-import VariableItem from "../components/VariableItem";
 import { getDescription } from "../utils/requests";
+import VariableItem from "../components/VariableItem";
+import VariablesSkeleton from "../skeletons/VariablesSkeleton";
 
 function Variables() {
-  const { error, variables, setVariables } = useContext(Context);
+  const { variables, setVariables } = useContext(Context);
 
   useEffect(() => {
     getDescription()
@@ -14,20 +15,21 @@ function Variables() {
   }, [setVariables]);
 
   return (
-    <>
-      <div className="container">
-        <Link to={`/`} className="container_button">
-          Назад
-        </Link>
-        <div className="container_variables">
-          <h1 className="container_title">Переменные</h1>
-          {<h1>{error}</h1> &&
-            variables.map((element) => {
-              return <VariableItem key={element.ID} element={element} />;
-            })}
-        </div>
+    <div className="container">
+      <Link to={`/`} className="container_button">
+        Назад
+      </Link>
+      <div className="container_variables">
+        <h1 className="container_title">Переменные</h1>
+        {variables.length > 0 ? (
+          variables.map((element) => {
+            return <VariableItem key={element.ID} element={element} />;
+          })
+        ) : (
+          <VariablesSkeleton />
+        )}
       </div>
-    </>
+    </div>
   );
 }
 
