@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/VINdecoder/static/css/main.560a1399.chunk.css",
-    "main.js": "/VINdecoder/static/js/main.80f1e6e8.chunk.js",
-    "main.js.map": "/VINdecoder/static/js/main.80f1e6e8.chunk.js.map",
+    "main.css": "/VINdecoder/static/css/main.fa1a8331.chunk.css",
+    "main.js": "/VINdecoder/static/js/main.9201c27f.chunk.js",
+    "main.js.map": "/VINdecoder/static/js/main.9201c27f.chunk.js.map",
     "runtime-main.js": "/VINdecoder/static/js/runtime-main.03474343.js",
     "runtime-main.js.map": "/VINdecoder/static/js/runtime-main.03474343.js.map",
-    "static/js/2.50151535.chunk.js": "/VINdecoder/static/js/2.50151535.chunk.js",
-    "static/js/2.50151535.chunk.js.map": "/VINdecoder/static/js/2.50151535.chunk.js.map",
+    "static/js/2.295e12ab.chunk.js": "/VINdecoder/static/js/2.295e12ab.chunk.js",
+    "static/js/2.295e12ab.chunk.js.map": "/VINdecoder/static/js/2.295e12ab.chunk.js.map",
     "index.html": "/VINdecoder/index.html",
-    "static/css/main.560a1399.chunk.css.map": "/VINdecoder/static/css/main.560a1399.chunk.css.map",
-    "static/js/2.50151535.chunk.js.LICENSE.txt": "/VINdecoder/static/js/2.50151535.chunk.js.LICENSE.txt"
+    "static/css/main.fa1a8331.chunk.css.map": "/VINdecoder/static/css/main.fa1a8331.chunk.css.map",
+    "static/js/2.295e12ab.chunk.js.LICENSE.txt": "/VINdecoder/static/js/2.295e12ab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.03474343.js",
-    "static/js/2.50151535.chunk.js",
-    "static/css/main.560a1399.chunk.css",
-    "static/js/main.80f1e6e8.chunk.js"
+    "static/js/2.295e12ab.chunk.js",
+    "static/css/main.fa1a8331.chunk.css",
+    "static/js/main.9201c27f.chunk.js"
   ]
 }
